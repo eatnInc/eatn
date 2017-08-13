@@ -19,7 +19,7 @@ var server = deployd({
   db: {
     host: password_host[1],
     port: +port_dbname[0],
-    name: port_db_name[1],
+    name: port_dbname[1],
     credentials: {
       username: username,
       password: password_host[0]
