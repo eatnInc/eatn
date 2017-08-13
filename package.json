@@ -1,21 +1,21 @@
 {
-  "name": "eatn",
-  "version": "1.0.0",
+  "name": "eatn-api",
+  "version": "0.0.1",
   "description": "food sharing",
-  "main": "index.js",
+  "keywords": [],
+  "homepage": "",
+  "author": "Nicolas Matthew Vinson",
+  "contributors": [],
   "dependencies": {
-    "create-react-native-app": "^1.0.0",
     "npm": "^4.0.0",
     "deployd": ">= 0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eatnInc/eatn"
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.2.x"
   },
-  "author": "NMVW",
   "license": "ISC"
 }
