@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"menu": {
+			"name": "menu",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "menu",
+			"order": 1
+		},
+		"location": {
+			"name": "location",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "location",
+			"order": 2
+		},
+		"pickup": {
+			"name": "pickup",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "pickup",
+			"order": 3
+		}
+	}
+}
