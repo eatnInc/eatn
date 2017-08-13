@@ -15,7 +15,7 @@ var password_host = login.split('@');
 
 var server = deployd({
   port: process.env.PORT || 5000,
-  env: 'production',
+  env: 'development',
   db: {
     host: password_host[1],
     port: +port_dbname[0],
