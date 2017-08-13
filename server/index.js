@@ -1,17 +1,21 @@
 // require deployd
-var deployd = require('deployd');
+let deployd = require('deployd');
 
 // configure database etc. 
-var server = deployd({
+let [type, username, login, port_dbname] = process.env.MONGODB_URI;
+let [port, db_name] = port_dbname.split('/');
+let [password, host] = login.split('@');
+
+let server = deployd({
   port: process.env.PORT || 5000,
   env: 'production',
   db: {
-    host: 'something.mongolab.com',
-    port: 27857,
-    name: 'database_name',
+    host,
+    port: +port,
+    name: db_name,
     credentials: {
-      username: 'username',
-      password: 'password'
+      username,
+      password
     }
   }
 });
