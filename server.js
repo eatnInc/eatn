@@ -8,10 +8,12 @@ var deployd = require('deployd');
 // let [port, db_name] = port_dbname.split('/');
 // let [password, host] = login.split('@');
 var uri = process.env.MONGODB_URI.split(':');
-var username = uri[1];
+var username = uri[1].split('//')[1];
 var login = uri[2];
 var port_dbname = uri[3].split('/');
 var password_host = login.split('@');
+
+// console.log('Database Creds: ', username, login, port_dbname, password_host);
 
 var server = deployd({
   port: process.env.PORT || 5000,
