@@ -1,12 +1,12 @@
 // require deployd
-let deployd = require('deployd');
+var deployd = require('deployd');
 
 // configure database etc. 
-let [type, username, login, port_dbname] = process.env.MONGODB_URI;
-let [port, db_name] = port_dbname.split('/');
-let [password, host] = login.split('@');
+var [type, username, login, port_dbname] = process.env.MONGODB_URI;
+var [port, db_name] = port_dbname.split('/');
+var [password, host] = login.split('@');
 
-let server = deployd({
+var server = deployd({
   port: process.env.PORT || 5000,
   env: 'production',
   db: {
